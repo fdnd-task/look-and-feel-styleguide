@@ -31,27 +31,27 @@
   .color-3 {
     background-color: var(--secondary-text);
   }
-    .color-4 {
+  .color-4 {
     background-color: var(--primary-chat-text-background);
   }
-    .color-5 {
+  .color-5 {
     background-color: var(--secondary-background);
     color: black;
     border: 1px solid black;
   }
-    .color-6 {
+  .color-6 {
     background-color: var(--primary-color);
   }
-    .color-7 {
+  .color-7 {
     background-color: var(--sustainable-label);
   }
-    .color-8 {
+  .color-8 {
     background-color: var(--timeless-label);
   }
-    .color-9 {
+  .color-9 {
     background-color: var(--digital-label);
   }
-    .color-10 {
+  .color-10 {
     background-color: var(--experience-label);
   }
   /* Typografie */
