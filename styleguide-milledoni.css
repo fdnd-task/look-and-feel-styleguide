@@ -3,18 +3,18 @@
    https://css-tricks.com/css-cascade-layers/ */
 
 @layer styleguide {
-
-    /* Schrijf hier de verschillende stijlen, die
+  /* Schrijf hier de verschillende stijlen, die
        gedeeld gaan worden door jullie projecten */
 
-    /* Kleuren */
-    .color-example {
-        background-color: #bada55;
-    }
+  /* Kleuren */
+  .color-example {
+    background-color: #bada55;
+  }
 
-    /* Typografie */
+  /* Typografie */
 
-
-    /* Formulier elementen */
-
+  /* Formulier elementen */
+}
+body {
+  background-color: red;
 }
