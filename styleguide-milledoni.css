@@ -22,36 +22,37 @@
     color: #FFF;
   }
   
-  .color-1 {
+  .secondary-color {
     background-color: var(--secondary-color);
   }
-  .color-2 {
+  .primary-bg {
     background-color: var(--primary-background);
+    color: var(--secondary-color);
   }
-  .color-3 {
+  .secondary-text {
     background-color: var(--secondary-text);
   }
-  .color-4 {
+  .chat-bg {
     background-color: var(--primary-chat-text-background);
   }
-  .color-5 {
+  .white-bg {
     background-color: var(--secondary-background);
     color: black;
     border: 1px solid black;
   }
-  .color-6 {
+  .highlight-color {
     background-color: var(--primary-color);
   }
-  .color-7 {
+  .sustainable-label {
     background-color: var(--sustainable-label);
   }
-  .color-8 {
+  .timeless-label {
     background-color: var(--timeless-label);
   }
-  .color-9 {
+  .digital-label {
     background-color: var(--digital-label);
   }
-  .color-10 {
+  .experience-label {
     background-color: var(--experience-label);
   }
   /* Typografie */
