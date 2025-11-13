@@ -5,13 +5,56 @@
 @layer styleguide {
   /* Schrijf hier de verschillende stijlen, die
        gedeeld gaan worden door jullie projecten */
-
+  :root {
+    --secondary-color: #212121;
+    --primary-background: #F6F5F5;
+    --secondary-text: #464646;
+    --primary-chat-text-background: #D6D6D6;
+    --secondary-background: #FFFFFF;
+    --primary-color: #E2B100;
+    --sustainable-label: #20A687;
+    --timeless-label: #B2291F;
+    --digital-label: #466EBF;
+    --experience-label: #AA2677;
+  }
   /* Kleuren */
   .color-example {
-    background-color: #bada55;
+    color: #FFF;
   }
-
+  
+  .secondary-color {
+    background-color: var(--secondary-color);
+  }
+  .primary-bg {
+    background-color: var(--primary-background);
+    color: var(--secondary-color);
+  }
+  .secondary-text {
+    background-color: var(--secondary-text);
+  }
+  .chat-bg {
+    background-color: var(--primary-chat-text-background);
+  }
+  .white-bg {
+    background-color: var(--secondary-background);
+    color: black;
+    border: 1px solid black;
+  }
+  .highlight-color {
+    background-color: var(--primary-color);
+  }
+  .sustainable-label {
+    background-color: var(--sustainable-label);
+  }
+  .timeless-label {
+    background-color: var(--timeless-label);
+  }
+  .digital-label {
+    background-color: var(--digital-label);
+  }
+  .experience-label {
+    background-color: var(--experience-label);
+  }
   /* Typografie */
-
   /* Formulier elementen */
 }
