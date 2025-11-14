@@ -169,4 +169,18 @@
   }
 
   /* extra */
+
+  .main-article {
+    border: solid var(--secondary-color);
+    max-width: 20rem;
+    font-family: parkinsans;
+    cursor: pointer;
+
+    &:hover {
+    }
+  }
+  .main-article img {
+    display: block;
+    width: 19rem;
+  }
 }
