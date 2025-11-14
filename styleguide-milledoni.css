@@ -7,53 +7,153 @@
        gedeeld gaan worden door jullie projecten */
   :root {
     --secondary-color: #212121;
-    --primary-background: #F6F5F5;
+    --primary-background: #f6f5f5;
     --secondary-text: #464646;
-    --primary-chat-text-background: #D6D6D6;
-    --secondary-background: #FFFFFF;
-    --primary-color: #E2B100;
-    --sustainable-label: #20A687;
-    --timeless-label: #B2291F;
-    --digital-label: #466EBF;
-    --experience-label: #AA2677;
+    --primary-chat-text-background: #d6d6d6;
+    --secondary-background: #ffffff;
+    --primary-color: #e2b100;
+    --sustainable-label: #20a687;
+    --timeless-label: #b2291f;
+    --digital-label: #466ebf;
+    --experience-label: #aa2677;
   }
   /* Kleuren */
   .color-example {
-    color: #FFF;
+    color: #fff;
   }
-  
-  .color-1 {
+
+  .secondary-color {
     background-color: var(--secondary-color);
   }
-  .color-2 {
+  .primary-bg {
     background-color: var(--primary-background);
+    color: var(--secondary-color);
   }
-  .color-3 {
+  .secondary-text {
     background-color: var(--secondary-text);
   }
-  .color-4 {
+  .chat-bg {
     background-color: var(--primary-chat-text-background);
   }
-  .color-5 {
+  .white-bg {
     background-color: var(--secondary-background);
     color: black;
     border: 1px solid black;
   }
-  .color-6 {
+  .highlight-color {
     background-color: var(--primary-color);
   }
-  .color-7 {
+  .sustainable-label {
     background-color: var(--sustainable-label);
   }
-  .color-8 {
+  .timeless-label {
     background-color: var(--timeless-label);
   }
-  .color-9 {
+  .digital-label {
     background-color: var(--digital-label);
   }
-  .color-10 {
+  .experience-label {
     background-color: var(--experience-label);
   }
   /* Typografie */
   /* Formulier elementen */
+  .primary-color-bg {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 0.4em;
+    border-radius: 5px;
+    position: relative;
+  }
+  .primary-bg {
+    background-color: var(--primary-background);
+    color: var(--secondary-color);
+    padding: 5px;
+    width: 100%;
+    outline: none;
+    height: 3em;
+    border: none;
+  }
+  .primary-text {
+    height: 45px;
+  }
+  .primary-color-bg:focus-visible {
+    outline: var(--primary-color) 3px solid;
+  }
+
+  .search-button {
+    position: absolute;
+    right: 0.8em;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #fff;
+    cursor: pointer;
+    &svg {
+      fill: var(--secondary-background);
+    }
+  }
+  .search-button:hover {
+    background-color: var(--primary-background);
+    fill: var(--secondary-color);
+  }
+  .search-button:focus-visible {
+    outline: var(--primary-color) 3px solid;
+  }
+  .button {
+    border-radius: 50%;
+    aspect-ratio: 1;
+    border: none;
+    fill: var(--secondary-background);
+    background-color: var(--secondary-color);
+
+    @media (prefers-reduced-motion: no-preference) {
+      transition: 0.2s ease-out;
+    }
+
+    &:hover {
+      background-color: var(--primary-background);
+      fill: var(--secondary-color);
+    }
+
+    &:focus-visible {
+      outline: var(--primary-color) 3px solid;
+    }
+
+    &:active {
+      background-color: var(--primary-color);
+      fill: var(--secondary-color);
+    }
+  }
+  .submit-button {
+    width: 20em;
+    height: 3em;
+    background-color: var(--secondary-text);
+    color: var(--secondary-background);
+    border: none;
+    border-radius: 5px;
+
+    @media (prefers-reduced-motion: no-preference) {
+      transition: 0.2s ease-out;
+    }
+
+    &:hover {
+      background-color: var(--primary-background);
+      color: var(--secondary-color);
+    }
+
+    &:focus-visible {
+      outline: var(--primary-color) 3px solid;
+    }
+
+    &:active {
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+    }
+  }
 }
