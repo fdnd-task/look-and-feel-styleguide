@@ -67,8 +67,57 @@
     font-family: parkinsans;
   }
 
-
   /* Formulier elementen ***********************************/
+  /* Typografie */
+  /* Formulier elementen */
+  .primary-color-bg {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 0.4em;
+    border-radius: 5px;
+    position: relative;
+  }
+  .primary-bg {
+    background-color: var(--primary-background);
+    color: var(--secondary-color);
+    padding: 5px;
+    width: 100%;
+    outline: none;
+    height: 3em;
+    border: none;
+  }
+  .primary-text {
+    height: 45px;
+  }
+  .primary-color-bg:focus-visible {
+    outline: var(--primary-color) 3px solid;
+  }
+
+  .search-button {
+    position: absolute;
+    right: 0.8em;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #fff;
+    cursor: pointer;
+    &svg {
+      fill: var(--secondary-background);
+    }
+  }
+  .search-button:hover {
+    background-color: var(--primary-background);
+    fill: var(--secondary-color);
+  }
+  .search-button:focus-visible {
+    outline: var(--primary-color) 3px solid;
+  }
   .button {
     border-radius: 50%;
     aspect-ratio: 1;
@@ -122,5 +171,4 @@
   }
 
   /* extra */
-
 }
