@@ -137,6 +137,8 @@
   .primary-bg-search {
     background-color: var(--primary-background-color);
     color: var(--secondary-color);
+    border: none;
+    width: 100%;
   }
   .primary-text {
     height: 45px;
