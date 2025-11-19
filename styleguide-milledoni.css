@@ -364,17 +364,104 @@
 
   /* extra */
 
-  /* .main-article{
-    border: solid var(--secondary-color);
-    max-width: 20rem;
-    font-family: parkinsans;
+  article{
+    position: relative;
+    background-color: var(--secondary-background);
+    width: 300px;
+    height: 400px;
+    padding: 4px 4px 0px 4px;
     cursor: pointer;
 
     &:hover {
+        translate: 0 -1px;
+    }
+
+    .article-product-img{
+        img{
+            width: 300px;
+            aspect-ratio: 1/0.9;
+            object-fit: cover;
+        }
+
+    .article-add-list{
+        position: absolute ;
+        top: 10px;
+        right: 10px;
+        background: transparent;
+        cursor: pointer;
+        height: 75px;
+        width: 75px;
+        border: none;
+        z-index: 1;
+        display: block;
+
+        border-radius:50%;
+
+        &:hover{
+            background-color: var(--primary-color);
+        }
+    }
+
+    .article-tags{
+        position: absolute;
+        bottom: 138px;
+        left: 10px;
+        flex-wrap: wrap;
+    }
+
+    .article-tag-timeless{
+        background: var(--timeless-label);
+        color: var(--secondary-background);
+        font-size: 12px;
+        padding: 3px 8px;
+    }
+
+    .article-tag-sustainable{
+        background: var(--sustainable-label);
+        color: var(--secondary-background);
+        font-size: 12px;
+        padding: 3px 8px;
+    }
+
+    .article-tag-experience{
+        background: var(--experience-label);
+        color: var(--secondary-background);
+        font-size: 12px;
+        padding: 3px 8px;
+    }
+
+    .article-tag-digital{
+        background: var(--digital-label);
+        color: var(--secondary-background);
+        font-size: 12px;
+        padding: 3px 8px;
+    } 
+  }
+
+    p{        
+        &:hover{
+            text-decoration-line: underline;
+        }
+    }
+    
+    .article-statistics{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+
+        svg{
+            max-height: 40px;
+            width:auto;
+        }
+
+        span:nth-of-type(1) {
+            margin-right:auto;
+        }
+
     }
   }
   .main-article img {
     display: block;
     width: 19rem;
-  } */
+  } 
 }
