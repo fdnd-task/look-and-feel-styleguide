@@ -11,13 +11,13 @@
   /* Schrijf hier de verschillende stijlen, die
        gedeeld gaan worden door jullie projecten */
   :root {
+    --primary-color: #e2b100;
     --secondary-color: #212121;
     --primary-background-color: #f6f5f5;
     --secondary-text-color: #464646;
     --user-chat-background-color: #d6d6d6;
     --secondary-background-color: #ffffff;
     /* Kleuren */
-    --primary-color: #e2b100;
     --sustainable-label-color: #20a687;
     --timeless-label-color: #b2291f;
     --digital-label-color: #466ebf;
@@ -37,7 +37,7 @@
     --font-weight-standard: 400;
     --font-weight-heading: 700;
   }
-  
+
   /* focus ring */
   input,
   button,
@@ -55,7 +55,7 @@
       outline: var(--secondary-color) 3px solid;
     }
   }
-  
+
   .color-example {
     color: #fff;
   }
@@ -63,19 +63,19 @@
   .secondary-color {
     background-color: var(--secondary-color);
   }
-  .primary-bg {
+  .primary-bg-color {
     background-color: var(--primary-background-color);
     color: var(--secondary-color);
   }
-  .secondary-text {
+  .secondary-text-color {
     background-color: var(--secondary-text-color);
   }
-  .chat-bg {
+  .chat-bg-color {
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
     background-color: var(--user-chat-background-color);
   }
-  .white-bg {
+  .white-bg-color {
     background-color: var(--secondary-background-color);
     color: black;
     border: 1px solid black;
@@ -83,16 +83,16 @@
   .highlight-color {
     background-color: var(--primary-color);
   }
-  .sustainable-label {
+  .sustainable-label-color {
     background-color: var(--sustainable-label-color);
   }
-  .timeless-label {
+  .timeless-label-color {
     background-color: var(--timeless-label-color);
   }
-  .digital-label {
+  .digital-label-color {
     background-color: var(--digital-label-color);
   }
-  .experience-label {
+  .experience-label-color {
     background-color: var(--experience-label-color);
   }
 
