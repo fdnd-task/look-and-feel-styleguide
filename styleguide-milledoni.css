@@ -177,6 +177,7 @@
   }
   .primary-text {
     height: 45px;
+    width: 100%;
   }
   .primary-color-bg:focus-visible {
     outline: var(--primary-color) 3px solid;
