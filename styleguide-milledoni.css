@@ -2,12 +2,12 @@
    https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Cascade_layers
    https://css-tricks.com/css-cascade-layers/ */
 
-  @font-face {
-    font-family: parkinsans;
-    src: url('./font/Parkinsans-VariableFont_wght.ttf');
-  }
+@font-face {
+  font-family: parkinsans;
+  src: url("./font/Parkinsans-VariableFont_wght.ttf");
+}
 
-   @layer styleguide {
+@layer styleguide {
   /* Schrijf hier de verschillende stijlen, die
        gedeeld gaan worden door jullie projecten */
   :root {
@@ -33,7 +33,7 @@
     --font-size-h5: 1.1em;
     --font-size-h6: 1em;
     --font-size-p: 1em;
-            
+
     --font-weight-standard: 400;
     --font-weight-heading: 700;
   }
@@ -44,14 +44,12 @@
   a,
   textarea {
     &:focus-visible {
-      /* box-shadow: 0px 0px 0px 4px var(--secondary-color); */
       outline: var(--primary-color) 3px solid;
     }
   }
 
   .footer-input {
     &:focus-visible {
-      /* box-shadow: 0px 0px 0px 4px var(--secondary-color); */
       outline: var(--secondary-color) 3px solid;
     }
   }
@@ -97,64 +95,64 @@
   }
 
   /* Typografie *******************************************/
-  .heading1{
+  .heading1 {
     font-family: parkinsans, sans-serif;
-    font-size: var(--font-size-h1)
+    font-size: var(--font-size-h1);
   }
 
-  .heading2{
+  .heading2 {
     font-family: parkinsans, sans-serif;
-    font-size: var(--font-size-h2)
+    font-size: var(--font-size-h2);
   }
 
-  .heading3{
+  .heading3 {
     font-family: parkinsans, sans-serif;
-    font-size: var(--font-size-h3)
+    font-size: var(--font-size-h3);
   }
 
-  .heading4{
+  .heading4 {
     font-family: parkinsans, sans-serif;
-    font-size: var(--font-size-h4)
+    font-size: var(--font-size-h4);
   }
 
-  .heading5{
+  .heading5 {
     font-family: parkinsans, sans-serif;
-    font-size: var(--font-size-h5)
+    font-size: var(--font-size-h5);
   }
 
-  .heading6{
+  .heading6 {
     font-family: parkinsans, sans-serif;
-    font-size: var(--font-size-h6)
-  }  
+    font-size: var(--font-size-h6);
+  }
 
-  .alinea-title{
+  .alinea-title {
     font-family: parkinsans, sans-serif;
     font-size: var(--font-size-p);
     font-weight: var(--font-weight-heading);
   }
 
-  .alinea-description{
+  .alinea-description {
     font-family: parkinsans, sans-serif;
     font-size: var(--font-size-p);
     font-weight: var(--font-weight-standard);
   }
 
-  .ul-mil{
+  .ul-mil {
     font-family: parkinsans, sans-serif;
     font-size: var(--font-weight-standard);
   }
 
-  .ol-mil{
+  .ol-mil {
     font-family: parkinsans, sans-serif;
     font-size: var(--font-weight-standard);
   }
 
-  .table-mil{
+  .table-mil {
     font-family: parkinsans, sans-serif;
     font-size: var(--font-weight-standard);
   }
 
-  .blockquote-mil p{
+  .blockquote-mil p {
     font-family: parkinsans, sans-serif;
     font-size: var(--font-weight-standard);
     font-weight: lighter;
@@ -342,7 +340,7 @@
   .submit-button {
     width: 20em;
     height: 3em;
-    background-color: var(--secondary-text);
+    background-color: var(--secondary-text-color);
     color: var(--secondary-background-color);
     border: none;
     border-radius: 5px;
@@ -362,7 +360,7 @@
     }
   }
 
-  .input-label-text{
+  .input-label-text {
     appearance: none;
     border-radius: 6px;
     border: 1px solid var(--secondary-text-color);
@@ -374,7 +372,7 @@
     padding-left: 1em;
   }
 
-  .label-textarea{
+  .label-textarea {
     appearance: none;
     border-radius: 6px;
     border: 1px solid var(--secondary-text-color);
@@ -385,10 +383,27 @@
     font-size: 1em;
     padding-left: 1em;
   }
+  .file-picture {
+    display: flex;
+    flex-direction: column;
+    font-family: "parkinsans", sans-serif;
+    color: var(--secondary-text-color);
+    margin-block-end: 1em;
+    svg {
+      border-radius: 10px;
+      border: 1px solid var(--secondary-text-color);
+      padding: 2em;
+      margin-block-start: 0.25em;
+      fill: var(--secondary-text-color);
+    }
+    #file-input {
+      display: none;
+    }
+  }
 
   /* extra */
 
-  article{
+  article {
     position: relative;
     background-color: var(--secondary-background);
     width: 300px;
@@ -398,18 +413,18 @@
     font-family: "parkinsans", sans-serif;
 
     &:hover {
-        translate: 0 -1px;
+      translate: 0 -1px;
     }
 
-    .article-product-img{
-        img{
-            width: 300px;
-            aspect-ratio: 1/0.9;
-            object-fit: cover;
-        }
+    .article-product-img {
+      img {
+        width: 300px;
+        aspect-ratio: 1/0.9;
+        object-fit: cover;
+      }
 
-    .article-add-list{
-        position: absolute ;
+      .article-add-list {
+        position: absolute;
         top: 10px;
         right: 10px;
         background: transparent;
@@ -420,70 +435,69 @@
         z-index: 1;
         display: block;
 
-        border-radius:50%;
+        border-radius: 50%;
 
-        &:hover{
-            background-color: var(--primary-color);
+        &:hover {
+          background-color: var(--primary-color);
         }
-    }
+      }
 
-    .article-tags{
+      .article-tags {
         position: absolute;
         bottom: 138px;
         left: 10px;
         flex-wrap: wrap;
         color: var(--secondary-background-color);
-    }
+      }
 
-    .article-tag-timeless{
+      .article-tag-timeless {
         background: var(--timeless-label-color);
         color: var(--secondary-background);
         font-size: 12px;
         padding: 3px 8px;
-    }
+      }
 
-    .article-tag-sustainable{
+      .article-tag-sustainable {
         background: var(--sustainable-label-color);
         color: var(--secondary-background);
         font-size: 12px;
         padding: 3px 8px;
-    }
+      }
 
-    .article-tag-experience{
+      .article-tag-experience {
         background: var(--experience-label-color);
         color: var(--secondary-background);
         font-size: 12px;
         padding: 3px 8px;
-    }
+      }
 
-    .article-tag-digital{
+      .article-tag-digital {
         background: var(--digital-label-color);
         color: var(--secondary-background);
         font-size: 12px;
         padding: 3px 8px;
-    } 
-  }
-
-    p{        
-        &:hover{
-            text-decoration-line: underline;
-        }
+      }
     }
-    
-    .article-statistics{
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
 
-        svg{
-            max-height: 40px;
-            width:auto;
-        }
+    p {
+      &:hover {
+        text-decoration-line: underline;
+      }
+    }
 
-        span:nth-of-type(1) {
-            margin-right:auto;
-        }
+    .article-statistics {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
+      svg {
+        max-height: 40px;
+        width: auto;
+      }
+
+      span:nth-of-type(1) {
+        margin-right: auto;
+      }
     }
   }
 }
